@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project>
+<project version="2">
   <!-- Output SWF options -->
   <output>
-    <movie disabled="False" />
+    <movie outputType="Application" />
     <movie input="" />
-    <movie path="bin/AS3FlexFlashWorkflow.swf" />
+    <movie path="bin\AS3FlexFlashWorkflow.swf" />
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
     <movie version="9" />
+    <movie minorVersion="0" />
+    <movie platform="Flash Player" />
     <movie background="#FFFFFF" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
@@ -18,13 +20,18 @@
   <!-- Build options -->
   <build>
     <option accessible="False" />
+    <option advancedTelemetry="False" />
     <option allowSourcePathOverlap="False" />
     <option benchmark="False" />
     <option es="False" />
+    <option inline="False" />
+    <option locale="" />
     <option loadConfig="" />
     <option optimize="False" />
+    <option omitTraces="True" />
     <option showActionScriptWarnings="True" />
     <option showBindingWarnings="True" />
+    <option showInvalidCSS="True" />
     <option showDeprecationWarnings="True" />
     <option showUnusedTypeSelectorWarnings="True" />
     <option strict="True" />
@@ -32,8 +39,12 @@
     <option useResourceBundleMetadata="True" />
     <option warnings="True" />
     <option verboseStackTraces="False" />
+    <option linkReport="" />
+    <option loadExterns="" />
+    <option staticLinkRSL="True" />
     <option additional="" />
-    <option customSDK="" />
+    <option compilerConstants="" />
+    <option minorVersion="" />
   </build>
   <!-- SWC Include Libraries -->
   <includeLibraries>
@@ -42,6 +53,7 @@
   <!-- SWC Libraries -->
   <libraryPaths>
     <element path="lib\sample.swc" />
+    <element path="lib\PhotoAlbum.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -57,7 +69,7 @@
   </intrinsics>
   <!-- Assets to embed into the output SWF -->
   <library>
-    <!-- example: <asset path="..." id="..." update="..." glyphs="..." mode="..." place="..." sharepoint="..." /> -->
+    <asset path="lib\PhotoAlbum.swf" />
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
@@ -65,7 +77,7 @@
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
-    <!-- example: <hidden path="..." /> -->
+    <hidden path="obj" />
   </hiddenPaths>
   <!-- Executed before build -->
   <preBuildCommand />
@@ -75,5 +87,8 @@
   <options>
     <option showHiddenPaths="False" />
     <option testMovie="ExternalPlayer" />
+    <option testMovieCommand="" />
   </options>
+  <!-- Plugin storage -->
+  <storage />
 </project>
